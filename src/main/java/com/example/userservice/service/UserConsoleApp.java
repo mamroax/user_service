@@ -1,7 +1,5 @@
 package com.example.userservice.service;
 
-import com.example.userservice.dao.UserDao;
-import com.example.userservice.dao.UserDaoImpl;
 import com.example.userservice.model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,11 +8,15 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
-public class UserConsoleService {
+public class UserConsoleApp {
 
-    private static final Logger logger = LogManager.getLogger(UserConsoleService.class);
-    private final UserDao userDao = new UserDaoImpl();
+    private static final Logger logger = LogManager.getLogger(UserConsoleApp.class);
+    private final UserService userService;
     private final Scanner scanner = new Scanner(System.in);
+
+    public UserConsoleApp(UserService userService) {
+        this.userService = userService;
+    }
 
     public void start() {
         printHelp();
@@ -22,16 +24,19 @@ public class UserConsoleService {
             System.out.print("\n> ");
             String cmd = scanner.nextLine().trim();
             if (cmd.isEmpty()) continue;
+
             switch (cmd.toLowerCase()) {
-                case "create": handleCreate(); break;
-                case "list": handleList(); break;
-                case "get": handleGet(); break;
-                case "update": handleUpdate(); break;
-                case "delete": handleDelete(); break;
-                case "help": printHelp(); break;
-                case "exit": System.out.println("Bye!"); return;
-                default:
-                    System.out.println("Unknown command. Type 'help' for commands.");
+                case "create" -> handleCreate();
+                case "list" -> handleList();
+                case "get" -> handleGet();
+                case "update" -> handleUpdate();
+                case "delete" -> handleDelete();
+                case "help" -> printHelp();
+                case "exit" -> {
+                    System.out.println("Bye!");
+                    return;
+                }
+                default -> System.out.println("Unknown command. Type 'help' for commands.");
             }
         }
     }
@@ -56,35 +61,26 @@ public class UserConsoleService {
             System.out.print("Age: ");
             Integer age = parseInteger(scanner.nextLine().trim());
 
-            User user = new User(name, email, age);
-            userDao.create(user);
+            User user = userService.createUser(name, email, age);
             System.out.println("Created: " + user);
         } catch (Exception e) {
             logger.error("Error creating user", e);
-            System.out.println("Failed to create user: " + e.getMessage());
+            System.out.println("Failed: " + e.getMessage());
         }
     }
 
     private void handleList() {
-        try {
-            List<User> users = userDao.findAll();
-            if (users.isEmpty()) {
-                System.out.println("No users found.");
-            } else {
-                users.forEach(System.out::println);
-            }
-        } catch (Exception e) {
-            logger.error("Error listing users", e);
-            System.out.println("Failed to list users: " + e.getMessage());
-        }
+        List<User> users = userService.getAllUsers();
+        if (users.isEmpty()) System.out.println("No users found.");
+        else users.forEach(System.out::println);
     }
 
     private void handleGet() {
         System.out.print("Id: ");
         Long id = parseLong(scanner.nextLine().trim());
-        Optional<User> userOpt = userDao.findById(id);
-        userOpt.ifPresentOrElse(
-                user -> System.out.println(user),
+        Optional<User> user = userService.getUserById(id);
+        user.ifPresentOrElse(
+                System.out::println,
                 () -> System.out.println("User not found with id " + id)
         );
     }
@@ -93,28 +89,19 @@ public class UserConsoleService {
         try {
             System.out.print("Id: ");
             Long id = parseLong(scanner.nextLine().trim());
-            Optional<User> userOpt = userDao.findById(id);
-            if (userOpt.isEmpty()) {
-                System.out.println("User not found with id " + id);
-                return;
-            }
-            User user = userOpt.get();
-            System.out.println("Current: " + user);
             System.out.print("New name (empty to skip): ");
             String name = scanner.nextLine().trim();
-            if (!name.isEmpty()) user.setName(name);
             System.out.print("New email (empty to skip): ");
             String email = scanner.nextLine().trim();
-            if (!email.isEmpty()) user.setEmail(email);
             System.out.print("New age (empty to skip): ");
             String ageStr = scanner.nextLine().trim();
-            if (!ageStr.isEmpty()) user.setAge(parseInteger(ageStr));
+            Integer age = ageStr.isEmpty() ? null : parseInteger(ageStr);
 
-            userDao.update(user);
-            System.out.println("Updated: " + user);
+            User updated = userService.updateUser(id, name, email, age);
+            System.out.println("Updated: " + updated);
         } catch (Exception e) {
             logger.error("Error updating user", e);
-            System.out.println("Failed to update user: " + e.getMessage());
+            System.out.println("Failed: " + e.getMessage());
         }
     }
 
@@ -122,12 +109,12 @@ public class UserConsoleService {
         try {
             System.out.print("Id: ");
             Long id = parseLong(scanner.nextLine().trim());
-            boolean deleted = userDao.delete(id);
+            boolean deleted = userService.deleteUser(id);
             if (deleted) System.out.println("Deleted user with id " + id);
-            else System.out.println("User not found with id " + id);
+            else System.out.println("User not found");
         } catch (Exception e) {
             logger.error("Error deleting user", e);
-            System.out.println("Failed to delete user: " + e.getMessage());
+            System.out.println("Failed: " + e.getMessage());
         }
     }
 
@@ -135,7 +122,7 @@ public class UserConsoleService {
         if (s == null || s.isEmpty()) return null;
         try {
             return Integer.parseInt(s);
-        } catch (NumberFormatException ex) {
+        } catch (NumberFormatException e) {
             return null;
         }
     }
@@ -143,9 +130,8 @@ public class UserConsoleService {
     private Long parseLong(String s) {
         try {
             return Long.parseLong(s);
-        } catch (NumberFormatException ex) {
+        } catch (NumberFormatException e) {
             return -1L;
         }
     }
 }
-
