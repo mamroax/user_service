@@ -62,10 +62,11 @@ class UserServiceImplTest {
         User u = new User("A", "a@example.com", 20);
         when(userDao.findById(5L)).thenReturn(Optional.of(u));
 
-
         Optional<User> found = userService.getUserById(5L);
+
         assertTrue(found.isPresent());
-        assertEquals(5L, found.get().getId());
+        assertEquals("A", found.get().getName());
+        assertEquals("a@example.com", found.get().getEmail());
         verify(userDao).findById(5L);
     }
 

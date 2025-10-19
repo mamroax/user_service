@@ -2690,3 +2690,495 @@ See https://java.testcontainers.org/on_failure.html for more details.
 2025-10-18 23:43:45.250 TRACE org.hibernate.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@43ab9ae9] for TypeConfiguration
 2025-10-18 23:43:45.251 DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@493968a9] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@43ab9ae9]
 2025-10-18 23:43:45.253 INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:53545/itestdb?loggerLevel=OFF]
+2025-10-19 11:47:39.256 INFO  com.example.userservice.service.UserServiceImpl - User updated via service: User{id=null, name='New', email='new@example.com', age=40, createdAt=null}
+2025-10-19 11:47:39.346 INFO  com.example.userservice.service.UserServiceImpl - User created via service: User{id=null, name='Nikolai', email='mamroax@gmail.com', age=28, createdAt=null}
+2025-10-19 11:47:39.597 INFO  org.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-10-19 11:47:39.617 INFO  org.testcontainers.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-10-19 11:47:39.668 INFO  org.testcontainers.DockerClientFactory - Testcontainers version: 1.20.3
+2025-10-19 11:47:40.236 INFO  org.testcontainers.dockerclient.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-10-19 11:47:40.264 INFO  org.testcontainers.dockerclient.DockerMachineClientProviderStrategy - docker-machine executable was not found on PATH ([C:\ProgramData\Oracle\Java\javapath, C:\Program Files\Common Files\Oracle\Java\javapath, C:\WINDOWS\system32, C:\WINDOWS, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\dotnet\, C:\chromedriver, C:\Program Files\Microsoft SQL Server\150\Tools\Binn\, C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\, C:\Program Files\Git\cmd, d:\devtools\maven\bin, C:\Program Files\TortoiseGit\bin, C:\Program Files\nodejs\, C:\Program Files\Docker\Docker\resources\bin, C:\Program Files\MySQL\MySQL Shell 8.0\bin\, C:\Users\mamro\AppData\Local\Microsoft\WindowsApps, C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.3\bin, , C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.3\bin, , C:\Users\mamro\AppData\Local\Programs\Microsoft VS Code\bin, C:\Users\mamro\.dotnet\tools, d:\devtools\maven\bin, C:\Users\mamro\AppData\Roaming\npm])
+2025-10-19 11:47:40.265 ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy - Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+As no valid configuration was found, execution cannot continue.
+See https://java.testcontainers.org/on_failure.html for more details.
+2025-10-19 11:48:11.398 INFO  com.example.userservice.service.UserServiceImpl - User updated via service: User{id=null, name='New', email='new@example.com', age=40, createdAt=null}
+2025-10-19 11:48:11.443 INFO  com.example.userservice.service.UserServiceImpl - User created via service: User{id=null, name='Nikolai', email='mamroax@gmail.com', age=28, createdAt=null}
+2025-10-19 11:48:11.516 INFO  org.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-10-19 11:48:11.523 INFO  org.testcontainers.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-10-19 11:48:11.541 INFO  org.testcontainers.DockerClientFactory - Testcontainers version: 1.20.3
+2025-10-19 11:48:11.841 INFO  org.testcontainers.dockerclient.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-10-19 11:48:11.851 INFO  org.testcontainers.dockerclient.DockerMachineClientProviderStrategy - docker-machine executable was not found on PATH ([C:\ProgramData\Oracle\Java\javapath, C:\Program Files\Common Files\Oracle\Java\javapath, C:\WINDOWS\system32, C:\WINDOWS, C:\WINDOWS\System32\Wbem, C:\WINDOWS\System32\WindowsPowerShell\v1.0\, C:\WINDOWS\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files (x86)\dotnet\, C:\chromedriver, C:\Program Files\Microsoft SQL Server\150\Tools\Binn\, C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\, C:\Program Files\Git\cmd, d:\devtools\maven\bin, C:\Program Files\TortoiseGit\bin, C:\Program Files\nodejs\, C:\Program Files\Docker\Docker\resources\bin, C:\Program Files\MySQL\MySQL Shell 8.0\bin\, C:\Users\mamro\AppData\Local\Microsoft\WindowsApps, C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.3\bin, , C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.3\bin, , C:\Users\mamro\AppData\Local\Programs\Microsoft VS Code\bin, C:\Users\mamro\.dotnet\tools, d:\devtools\maven\bin, C:\Users\mamro\AppData\Roaming\npm])
+2025-10-19 11:48:11.853 ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy - Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+As no valid configuration was found, execution cannot continue.
+See https://java.testcontainers.org/on_failure.html for more details.
+2025-10-19 11:52:04.898 INFO  com.example.userservice.service.UserServiceImpl - User updated via service: User{id=null, name='New', email='new@example.com', age=40, createdAt=null}
+2025-10-19 11:52:04.955 INFO  com.example.userservice.service.UserServiceImpl - User created via service: User{id=null, name='Nikolai', email='mamroax@gmail.com', age=28, createdAt=null}
+2025-10-19 11:52:05.100 INFO  org.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-10-19 11:52:05.109 INFO  org.testcontainers.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-10-19 11:52:05.141 INFO  org.testcontainers.DockerClientFactory - Testcontainers version: 1.20.3
+2025-10-19 11:52:06.135 INFO  org.testcontainers.dockerclient.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-10-19 11:52:07.114 INFO  org.testcontainers.dockerclient.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-10-19 11:52:07.118 INFO  org.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2025-10-19 11:52:07.166 INFO  org.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 27.5.1
+  API Version: 1.47
+  Operating System: Docker Desktop
+  Total Memory: 7605 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-10-19 11:52:07.439 INFO  tc.testcontainers/ryuk:0.9.0 - Creating container for image: testcontainers/ryuk:0.9.0
+2025-10-19 11:52:07.638 INFO  org.testcontainers.utility.RegistryAuthLocator - Failure when attempting to lookup auth config. Please ignore if you don't have images in an authenticated registry. Details: (dockerImageName: testcontainers/ryuk:0.9.0, configFile: C:\Users\mamro\.docker\config.json, configEnv: DOCKER_AUTH_CONFIG). Falling back to docker-java default behaviour. Exception message: Unrecognized token 'credentials': was expecting ('true', 'false' or 'null')
+ at [Source: credentials not found in native keychain; line: 1, column: 12]
+2025-10-19 11:52:08.052 INFO  tc.testcontainers/ryuk:0.9.0 - Container testcontainers/ryuk:0.9.0 is starting: cf4454fde1626c8e90baf52d66dfc36b4756e30b1579b78c9161a42a839f470d
+2025-10-19 11:52:09.011 INFO  tc.testcontainers/ryuk:0.9.0 - Container testcontainers/ryuk:0.9.0 started in PT1.5709728S
+2025-10-19 11:52:09.026 INFO  org.testcontainers.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-10-19 11:52:09.026 INFO  org.testcontainers.DockerClientFactory - Checking the system...
+2025-10-19 11:52:09.029 INFO  org.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-10-19 11:52:09.030 INFO  tc.postgres:15.3 - Creating container for image: postgres:15.3
+2025-10-19 11:52:09.241 INFO  tc.postgres:15.3 - Container postgres:15.3 is starting: ebf23b2698b40f6dc8f7ba5f45c9990745cd16ea5e7e74a1191e7a6d2036304e
+2025-10-19 11:52:12.394 INFO  tc.postgres:15.3 - Container postgres:15.3 started in PT3.3643292S
+2025-10-19 11:52:12.396 INFO  tc.postgres:15.3 - Container is started (JDBC URL: jdbc:postgresql://localhost:49682/itestdb?loggerLevel=OFF)
+2025-10-19 11:52:12.516 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-10-19 11:52:12.653 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-19 11:52:12.707 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@6238d5e0
+2025-10-19 11:52:12.708 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@6238d5e0
+2025-10-19 11:52:12.708 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@6238d5e0
+2025-10-19 11:52:12.710 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6b063470
+2025-10-19 11:52:12.711 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@6c2a95d5
+2025-10-19 11:52:12.711 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@1de13f34
+2025-10-19 11:52:12.712 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@d25e878
+2025-10-19 11:52:12.713 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@d25e878
+2025-10-19 11:52:12.713 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@d25e878
+2025-10-19 11:52:12.714 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@26b3c9a2
+2025-10-19 11:52:12.715 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@26b3c9a2
+2025-10-19 11:52:12.715 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@26b3c9a2
+2025-10-19 11:52:12.717 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@c9b5a99
+2025-10-19 11:52:12.717 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@c9b5a99
+2025-10-19 11:52:12.717 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@c9b5a99
+2025-10-19 11:52:12.718 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@256589a1
+2025-10-19 11:52:12.719 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@256589a1
+2025-10-19 11:52:12.719 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@256589a1
+2025-10-19 11:52:12.721 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@99a8de3
+2025-10-19 11:52:12.722 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@99a8de3
+2025-10-19 11:52:12.722 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@99a8de3
+2025-10-19 11:52:12.724 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@6cdee57
+2025-10-19 11:52:12.724 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@6cdee57
+2025-10-19 11:52:12.724 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@6cdee57
+2025-10-19 11:52:12.725 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@6f3bd37f
+2025-10-19 11:52:12.726 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@6f3bd37f
+2025-10-19 11:52:12.726 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6f3bd37f
+2025-10-19 11:52:12.726 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@20cff21e
+2025-10-19 11:52:12.726 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@20cff21e
+2025-10-19 11:52:12.727 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@6af87130
+2025-10-19 11:52:12.728 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@6af87130
+2025-10-19 11:52:12.729 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@30508066
+2025-10-19 11:52:12.729 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@30508066
+2025-10-19 11:52:12.731 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@1bee0085
+2025-10-19 11:52:12.732 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@18a98913
+2025-10-19 11:52:12.735 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@656c5c3
+2025-10-19 11:52:12.735 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@656c5c3
+2025-10-19 11:52:12.737 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@77324a58
+2025-10-19 11:52:12.737 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@77324a58
+2025-10-19 11:52:12.738 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@5864e8bf
+2025-10-19 11:52:12.739 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@5864e8bf
+2025-10-19 11:52:12.740 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@7b297740
+2025-10-19 11:52:12.741 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@7b297740
+2025-10-19 11:52:12.742 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@6e3dd5ce
+2025-10-19 11:52:12.742 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@6e3dd5ce
+2025-10-19 11:52:12.744 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@35563e4c
+2025-10-19 11:52:12.744 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@35563e4c
+2025-10-19 11:52:12.747 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@54ccb3
+2025-10-19 11:52:12.747 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@54ccb3
+2025-10-19 11:52:12.750 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2d237460
+2025-10-19 11:52:12.750 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2d237460
+2025-10-19 11:52:12.754 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7f2b584b
+2025-10-19 11:52:12.754 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7f2b584b
+2025-10-19 11:52:12.755 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@39f0c343
+2025-10-19 11:52:12.756 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@39f0c343
+2025-10-19 11:52:12.757 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@65600fb3
+2025-10-19 11:52:12.757 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@65600fb3
+2025-10-19 11:52:12.758 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@7ec3a8bd
+2025-10-19 11:52:12.759 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@7ec3a8bd
+2025-10-19 11:52:12.759 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@7ec3a8bd
+2025-10-19 11:52:12.761 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1a2e563e
+2025-10-19 11:52:12.762 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@20bb85b4
+2025-10-19 11:52:12.763 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@20bb85b4
+2025-10-19 11:52:12.763 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@20bb85b4
+2025-10-19 11:52:12.763 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@76e4212
+2025-10-19 11:52:12.764 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@45bbc52f
+2025-10-19 11:52:12.765 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@150fc7a7
+2025-10-19 11:52:12.766 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@150fc7a7
+2025-10-19 11:52:12.767 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@1be52861
+2025-10-19 11:52:12.767 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1be52861
+2025-10-19 11:52:12.768 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@67d8faec
+2025-10-19 11:52:12.769 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@67d8faec
+2025-10-19 11:52:12.769 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@62cf6a84
+2025-10-19 11:52:12.769 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@62cf6a84
+2025-10-19 11:52:12.771 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@35f7969d
+2025-10-19 11:52:12.772 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@35f7969d
+2025-10-19 11:52:12.772 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@4b93dd6a
+2025-10-19 11:52:12.773 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@49754e74
+2025-10-19 11:52:12.774 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@49754e74
+2025-10-19 11:52:12.774 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@49754e74
+2025-10-19 11:52:12.775 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@38811103
+2025-10-19 11:52:12.775 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@38811103
+2025-10-19 11:52:12.775 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@38811103
+2025-10-19 11:52:12.777 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@625487a6
+2025-10-19 11:52:12.777 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@36510e73
+2025-10-19 11:52:12.778 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@2bba35ef
+2025-10-19 11:52:12.779 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@2bba35ef
+2025-10-19 11:52:12.779 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@2bba35ef
+2025-10-19 11:52:12.780 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@65593327
+2025-10-19 11:52:12.780 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@65593327
+2025-10-19 11:52:12.780 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@65593327
+2025-10-19 11:52:12.781 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@4b28a7bf
+2025-10-19 11:52:12.783 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@437281c5
+2025-10-19 11:52:12.784 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@1537e43
+2025-10-19 11:52:12.784 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1537e43
+2025-10-19 11:52:12.785 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7767bd4e
+2025-10-19 11:52:12.788 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@165614f5
+2025-10-19 11:52:12.788 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@165614f5
+2025-10-19 11:52:12.790 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@6206b4a7
+2025-10-19 11:52:12.790 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@6206b4a7
+2025-10-19 11:52:12.791 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@175581eb
+2025-10-19 11:52:12.792 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@5d14e99e
+2025-10-19 11:52:12.793 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@3e03046d
+2025-10-19 11:52:12.798 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@1578fa9
+2025-10-19 11:52:12.798 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1578fa9
+2025-10-19 11:52:12.798 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@26275b46
+2025-10-19 11:52:12.799 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3e9beef2
+2025-10-19 11:52:12.799 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@2f15a964
+2025-10-19 11:52:12.799 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@3111631d
+2025-10-19 11:52:12.799 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@2d70f312
+2025-10-19 11:52:12.799 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4c7d7430
+2025-10-19 11:52:12.799 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4ea1aa52
+2025-10-19 11:52:12.799 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@74123110
+2025-10-19 11:52:12.871 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2025-10-19 11:52:12.879 INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:49682/itestdb?loggerLevel=OFF]
+2025-10-19 11:52:12.879 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=test}
+2025-10-19 11:52:12.879 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-10-19 11:52:12.884 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2025-10-19 11:52:13.166 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-19 11:52:13.234 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@6dded900
+2025-10-19 11:52:13.234 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@6dded900
+2025-10-19 11:52:13.234 DEBUG org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@35f7969d
+2025-10-19 11:52:13.237 DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2b3f7704] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3a16984c]
+2025-10-19 11:52:13.582 DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2b3f7704] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@43ab9ae9]
+2025-10-19 11:52:13.805 DEBUG org.hibernate.SQL - drop table if exists users cascade
+2025-10-19 11:52:13.808 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@356f20b7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-10-19 11:52:13.813 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-10-19 11:52:13.813 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2025-10-19 11:52:13.817 DEBUG org.hibernate.SQL - create table users (id  bigserial not null, age int4, created_at timestamp not null, email varchar(255) not null, name varchar(255) not null, primary key (id))
+2025-10-19 11:52:13.817 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@97beeaf] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-10-19 11:52:13.824 DEBUG org.hibernate.SQL - alter table users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2025-10-19 11:52:13.834 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-19 11:52:13.846 TRACE org.hibernate.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@43ab9ae9] for TypeConfiguration
+2025-10-19 11:52:14.022 DEBUG org.hibernate.SQL - delete from users
+2025-10-19 11:52:14.051 DEBUG org.hibernate.SQL - insert into users (age, created_at, email, name) values (?, ?, ?, ?)
+2025-10-19 11:52:14.055 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [21]
+2025-10-19 11:52:14.058 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [2025-10-19T11:52:14.036591900]
+2025-10-19 11:52:14.059 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [alice@test]
+2025-10-19 11:52:14.061 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [Alice]
+2025-10-19 11:52:14.080 INFO  com.example.userservice.dao.UserDaoImpl - Created user: User{id=1, name='Alice', email='alice@test', age=21, createdAt=2025-10-19T11:52:14.036591900}
+2025-10-19 11:52:14.087 DEBUG org.hibernate.SQL - select user0_.id as id1_0_0_, user0_.age as age2_0_0_, user0_.created_at as created_3_0_0_, user0_.email as email4_0_0_, user0_.name as name5_0_0_ from users user0_ where user0_.id=?
+2025-10-19 11:52:14.088 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2025-10-19 11:52:14.097 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([age2_0_0_] : [INTEGER]) - [21]
+2025-10-19 11:52:14.098 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([created_3_0_0_] : [TIMESTAMP]) - [2025-10-19T11:52:14.036592]
+2025-10-19 11:52:14.099 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([email4_0_0_] : [VARCHAR]) - [alice@test]
+2025-10-19 11:52:14.099 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([name5_0_0_] : [VARCHAR]) - [Alice]
+2025-10-19 11:52:14.109 DEBUG org.hibernate.SQL - delete from users
+2025-10-19 11:52:14.114 DEBUG org.hibernate.SQL - insert into users (age, created_at, email, name) values (?, ?, ?, ?)
+2025-10-19 11:52:14.115 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [30]
+2025-10-19 11:52:14.115 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [2025-10-19T11:52:14.114913]
+2025-10-19 11:52:14.116 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [bob@test]
+2025-10-19 11:52:14.116 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [Bob]
+2025-10-19 11:52:14.119 INFO  com.example.userservice.dao.UserDaoImpl - Created user: User{id=2, name='Bob', email='bob@test', age=30, createdAt=2025-10-19T11:52:14.114913}
+2025-10-19 11:52:14.120 DEBUG org.hibernate.SQL - insert into users (age, created_at, email, name) values (?, ?, ?, ?)
+2025-10-19 11:52:14.120 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [28]
+2025-10-19 11:52:14.120 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [2025-10-19T11:52:14.120430500]
+2025-10-19 11:52:14.121 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [carol@test]
+2025-10-19 11:52:14.121 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [Carol]
+2025-10-19 11:52:14.126 INFO  com.example.userservice.dao.UserDaoImpl - Created user: User{id=3, name='Carol', email='carol@test', age=28, createdAt=2025-10-19T11:52:14.120430500}
+2025-10-19 11:52:14.141 DEBUG org.hibernate.SQL - select user0_.id as id1_0_, user0_.age as age2_0_, user0_.created_at as created_3_0_, user0_.email as email4_0_, user0_.name as name5_0_ from users user0_
+2025-10-19 11:52:14.146 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_0_] : [BIGINT]) - [2]
+2025-10-19 11:52:14.146 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([age2_0_] : [INTEGER]) - [30]
+2025-10-19 11:52:14.146 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([created_3_0_] : [TIMESTAMP]) - [2025-10-19T11:52:14.114913]
+2025-10-19 11:52:14.146 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([email4_0_] : [VARCHAR]) - [bob@test]
+2025-10-19 11:52:14.146 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([name5_0_] : [VARCHAR]) - [Bob]
+2025-10-19 11:52:14.147 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_0_] : [BIGINT]) - [3]
+2025-10-19 11:52:14.147 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([age2_0_] : [INTEGER]) - [28]
+2025-10-19 11:52:14.147 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([created_3_0_] : [TIMESTAMP]) - [2025-10-19T11:52:14.120431]
+2025-10-19 11:52:14.147 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([email4_0_] : [VARCHAR]) - [carol@test]
+2025-10-19 11:52:14.147 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([name5_0_] : [VARCHAR]) - [Carol]
+2025-10-19 11:52:14.158 DEBUG org.hibernate.SQL - update users set age=?, email=?, name=? where id=?
+2025-10-19 11:52:14.158 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [31]
+2025-10-19 11:52:14.159 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [bob@test]
+2025-10-19 11:52:14.159 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Bob]
+2025-10-19 11:52:14.159 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [BIGINT] - [2]
+2025-10-19 11:52:14.165 INFO  com.example.userservice.dao.UserDaoImpl - Updated user: User{id=2, name='Bob', email='bob@test', age=31, createdAt=2025-10-19T11:52:14.114913}
+2025-10-19 11:52:14.166 DEBUG org.hibernate.SQL - select user0_.id as id1_0_0_, user0_.age as age2_0_0_, user0_.created_at as created_3_0_0_, user0_.email as email4_0_0_, user0_.name as name5_0_0_ from users user0_ where user0_.id=?
+2025-10-19 11:52:14.166 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2025-10-19 11:52:14.168 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([age2_0_0_] : [INTEGER]) - [31]
+2025-10-19 11:52:14.169 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([created_3_0_0_] : [TIMESTAMP]) - [2025-10-19T11:52:14.114913]
+2025-10-19 11:52:14.169 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([email4_0_0_] : [VARCHAR]) - [bob@test]
+2025-10-19 11:52:14.170 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([name5_0_0_] : [VARCHAR]) - [Bob]
+2025-10-19 11:52:14.174 DEBUG org.hibernate.SQL - delete from users
+2025-10-19 11:52:14.180 DEBUG org.hibernate.SQL - insert into users (age, created_at, email, name) values (?, ?, ?, ?)
+2025-10-19 11:52:14.180 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [40]
+2025-10-19 11:52:14.180 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [2025-10-19T11:52:14.179187]
+2025-10-19 11:52:14.180 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [dave@test]
+2025-10-19 11:52:14.180 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [Dave]
+2025-10-19 11:52:14.185 INFO  com.example.userservice.dao.UserDaoImpl - Created user: User{id=4, name='Dave', email='dave@test', age=40, createdAt=2025-10-19T11:52:14.179187}
+2025-10-19 11:52:14.185 DEBUG org.hibernate.SQL - select user0_.id as id1_0_0_, user0_.age as age2_0_0_, user0_.created_at as created_3_0_0_, user0_.email as email4_0_0_, user0_.name as name5_0_0_ from users user0_ where user0_.id=?
+2025-10-19 11:52:14.186 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2025-10-19 11:52:14.189 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([age2_0_0_] : [INTEGER]) - [40]
+2025-10-19 11:52:14.190 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([created_3_0_0_] : [TIMESTAMP]) - [2025-10-19T11:52:14.179187]
+2025-10-19 11:52:14.190 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([email4_0_0_] : [VARCHAR]) - [dave@test]
+2025-10-19 11:52:14.190 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([name5_0_0_] : [VARCHAR]) - [Dave]
+2025-10-19 11:52:14.196 DEBUG org.hibernate.SQL - delete from users where id=?
+2025-10-19 11:52:14.196 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2025-10-19 11:52:14.202 INFO  com.example.userservice.dao.UserDaoImpl - Deleted user with id 4
+2025-10-19 11:52:14.203 DEBUG org.hibernate.SQL - select user0_.id as id1_0_0_, user0_.age as age2_0_0_, user0_.created_at as created_3_0_0_, user0_.email as email4_0_0_, user0_.name as name5_0_0_ from users user0_ where user0_.id=?
+2025-10-19 11:52:14.203 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2025-10-19 11:52:14.207 DEBUG org.hibernate.SQL - select user0_.id as id1_0_, user0_.age as age2_0_, user0_.created_at as created_3_0_, user0_.email as email4_0_, user0_.name as name5_0_ from users user0_
+2025-10-19 11:52:14.214 INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-10-19 11:52:14.215 DEBUG org.hibernate.SQL - drop table if exists users cascade
+2025-10-19 11:52:14.215 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@24258b54] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-10-19 11:52:14.219 TRACE org.hibernate.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@43ab9ae9] for TypeConfiguration
+2025-10-19 11:52:14.219 DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@493968a9] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@43ab9ae9]
+2025-10-19 11:52:14.219 INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:49682/itestdb?loggerLevel=OFF]
+2025-10-19 11:53:29.199 INFO  com.example.userservice.service.UserServiceImpl - User updated via service: User{id=null, name='New', email='new@example.com', age=40, createdAt=null}
+2025-10-19 11:53:29.229 INFO  com.example.userservice.service.UserServiceImpl - User created via service: User{id=null, name='Nikolai', email='mamroax@gmail.com', age=28, createdAt=null}
+2025-10-19 11:53:29.302 INFO  org.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+2025-10-19 11:53:29.307 INFO  org.testcontainers.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2025-10-19 11:53:29.326 INFO  org.testcontainers.DockerClientFactory - Testcontainers version: 1.20.3
+2025-10-19 11:53:29.618 INFO  org.testcontainers.dockerclient.DockerClientProviderStrategy - Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2025-10-19 11:53:29.914 INFO  org.testcontainers.dockerclient.DockerClientProviderStrategy - Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2025-10-19 11:53:29.915 INFO  org.testcontainers.DockerClientFactory - Docker host IP address is localhost
+2025-10-19 11:53:29.939 INFO  org.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 27.5.1
+  API Version: 1.47
+  Operating System: Docker Desktop
+  Total Memory: 7605 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+2025-10-19 11:53:30.107 INFO  tc.testcontainers/ryuk:0.9.0 - Creating container for image: testcontainers/ryuk:0.9.0
+2025-10-19 11:53:30.240 INFO  org.testcontainers.utility.RegistryAuthLocator - Failure when attempting to lookup auth config. Please ignore if you don't have images in an authenticated registry. Details: (dockerImageName: testcontainers/ryuk:0.9.0, configFile: C:\Users\mamro\.docker\config.json, configEnv: DOCKER_AUTH_CONFIG). Falling back to docker-java default behaviour. Exception message: Unrecognized token 'credentials': was expecting ('true', 'false' or 'null')
+ at [Source: credentials not found in native keychain; line: 1, column: 12]
+2025-10-19 11:53:30.457 INFO  tc.testcontainers/ryuk:0.9.0 - Container testcontainers/ryuk:0.9.0 is starting: 783e42bbad7da877f28becf7b3227b2ff4deb0b7dad16724722887ed0e68fb47
+2025-10-19 11:53:31.035 INFO  tc.testcontainers/ryuk:0.9.0 - Container testcontainers/ryuk:0.9.0 started in PT0.9276509S
+2025-10-19 11:53:31.042 INFO  org.testcontainers.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2025-10-19 11:53:31.043 INFO  org.testcontainers.DockerClientFactory - Checking the system...
+2025-10-19 11:53:31.044 INFO  org.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+2025-10-19 11:53:31.045 INFO  tc.postgres:15.3 - Creating container for image: postgres:15.3
+2025-10-19 11:53:31.169 INFO  tc.postgres:15.3 - Container postgres:15.3 is starting: 0ebf19d5328e822d9be3279a56cb51073d5803a49753b77586af2a8c021c786a
+2025-10-19 11:53:33.113 INFO  tc.postgres:15.3 - Container postgres:15.3 started in PT2.0690679S
+2025-10-19 11:53:33.114 INFO  tc.postgres:15.3 - Container is started (JDBC URL: jdbc:postgresql://localhost:57214/itestdb?loggerLevel=OFF)
+2025-10-19 11:53:33.180 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-10-19 11:53:33.246 INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-10-19 11:53:33.275 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@78d92eef
+2025-10-19 11:53:33.275 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@78d92eef
+2025-10-19 11:53:33.275 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@78d92eef
+2025-10-19 11:53:33.276 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@71531dd7
+2025-10-19 11:53:33.276 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2c9fdb64
+2025-10-19 11:53:33.277 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@55a0f011
+2025-10-19 11:53:33.278 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@61da0413
+2025-10-19 11:53:33.278 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@61da0413
+2025-10-19 11:53:33.278 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@61da0413
+2025-10-19 11:53:33.280 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@4bc9ca97
+2025-10-19 11:53:33.280 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@4bc9ca97
+2025-10-19 11:53:33.280 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4bc9ca97
+2025-10-19 11:53:33.281 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@58a7dc4
+2025-10-19 11:53:33.281 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@58a7dc4
+2025-10-19 11:53:33.281 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@58a7dc4
+2025-10-19 11:53:33.282 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@4fb57fb3
+2025-10-19 11:53:33.282 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@4fb57fb3
+2025-10-19 11:53:33.282 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@4fb57fb3
+2025-10-19 11:53:33.283 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@3f048c86
+2025-10-19 11:53:33.284 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@3f048c86
+2025-10-19 11:53:33.284 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@3f048c86
+2025-10-19 11:53:33.285 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@e3899fd
+2025-10-19 11:53:33.285 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@e3899fd
+2025-10-19 11:53:33.285 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@e3899fd
+2025-10-19 11:53:33.286 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@53ea380b
+2025-10-19 11:53:33.286 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@53ea380b
+2025-10-19 11:53:33.286 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@53ea380b
+2025-10-19 11:53:33.288 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6b42e36d
+2025-10-19 11:53:33.288 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6b42e36d
+2025-10-19 11:53:33.289 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4f3c7808
+2025-10-19 11:53:33.289 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4f3c7808
+2025-10-19 11:53:33.290 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@3de79067
+2025-10-19 11:53:33.290 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@3de79067
+2025-10-19 11:53:33.291 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@87f501f
+2025-10-19 11:53:33.292 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4863c8ac
+2025-10-19 11:53:33.292 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@7f0766ef
+2025-10-19 11:53:33.293 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@7f0766ef
+2025-10-19 11:53:33.293 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@458031da
+2025-10-19 11:53:33.294 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@458031da
+2025-10-19 11:53:33.295 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@289f15e9
+2025-10-19 11:53:33.295 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@289f15e9
+2025-10-19 11:53:33.296 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@33e3bd2e
+2025-10-19 11:53:33.296 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@33e3bd2e
+2025-10-19 11:53:33.297 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@16e1219f
+2025-10-19 11:53:33.297 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@16e1219f
+2025-10-19 11:53:33.298 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@5175d9ad
+2025-10-19 11:53:33.298 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@5175d9ad
+2025-10-19 11:53:33.300 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@242ff747
+2025-10-19 11:53:33.300 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@242ff747
+2025-10-19 11:53:33.301 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@66713605
+2025-10-19 11:53:33.301 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@66713605
+2025-10-19 11:53:33.303 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1fe8f5e8
+2025-10-19 11:53:33.303 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1fe8f5e8
+2025-10-19 11:53:33.304 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@ef86c72
+2025-10-19 11:53:33.304 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@ef86c72
+2025-10-19 11:53:33.305 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@7761e342
+2025-10-19 11:53:33.305 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@7761e342
+2025-10-19 11:53:33.306 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@2f4d32bf
+2025-10-19 11:53:33.306 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2f4d32bf
+2025-10-19 11:53:33.306 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2f4d32bf
+2025-10-19 11:53:33.308 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@6d6cd1e0
+2025-10-19 11:53:33.309 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@5866731
+2025-10-19 11:53:33.309 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@5866731
+2025-10-19 11:53:33.309 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@5866731
+2025-10-19 11:53:33.310 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@56cfe6be
+2025-10-19 11:53:33.311 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@2abc55c4
+2025-10-19 11:53:33.311 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@25ce435
+2025-10-19 11:53:33.312 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@25ce435
+2025-10-19 11:53:33.313 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@7ec3a8bd
+2025-10-19 11:53:33.313 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@7ec3a8bd
+2025-10-19 11:53:33.313 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@47fb7ec9
+2025-10-19 11:53:33.313 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@47fb7ec9
+2025-10-19 11:53:33.315 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@3be3e76c
+2025-10-19 11:53:33.315 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3be3e76c
+2025-10-19 11:53:33.316 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@7faa0680
+2025-10-19 11:53:33.316 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@7faa0680
+2025-10-19 11:53:33.317 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6a8a551e
+2025-10-19 11:53:33.318 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@798cf6d2
+2025-10-19 11:53:33.318 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@798cf6d2
+2025-10-19 11:53:33.318 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@798cf6d2
+2025-10-19 11:53:33.319 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@615439f7
+2025-10-19 11:53:33.319 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@615439f7
+2025-10-19 11:53:33.319 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@615439f7
+2025-10-19 11:53:33.321 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@7eaa2bc6
+2025-10-19 11:53:33.322 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@7cf8f45a
+2025-10-19 11:53:33.323 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@3b57dba4
+2025-10-19 11:53:33.324 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@3b57dba4
+2025-10-19 11:53:33.324 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@3b57dba4
+2025-10-19 11:53:33.325 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2b0454d2
+2025-10-19 11:53:33.326 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2b0454d2
+2025-10-19 11:53:33.326 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2b0454d2
+2025-10-19 11:53:33.327 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@736b21ee
+2025-10-19 11:53:33.328 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@1b46392c
+2025-10-19 11:53:33.331 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@5c59a0f7
+2025-10-19 11:53:33.331 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5c59a0f7
+2025-10-19 11:53:33.332 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@79e10fb4
+2025-10-19 11:53:33.334 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@26c7b1c6
+2025-10-19 11:53:33.334 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@26c7b1c6
+2025-10-19 11:53:33.336 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@4b28a7bf
+2025-10-19 11:53:33.336 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@4b28a7bf
+2025-10-19 11:53:33.337 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@437281c5
+2025-10-19 11:53:33.337 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@70f148dc
+2025-10-19 11:53:33.339 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@7767bd4e
+2025-10-19 11:53:33.343 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@6206b4a7
+2025-10-19 11:53:33.343 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@6206b4a7
+2025-10-19 11:53:33.344 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@175581eb
+2025-10-19 11:53:33.344 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@2b79c8ff
+2025-10-19 11:53:33.344 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@2baf72d5
+2025-10-19 11:53:33.344 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@66756662
+2025-10-19 11:53:33.344 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@5d14e99e
+2025-10-19 11:53:33.344 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@38cfecf3
+2025-10-19 11:53:33.345 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@682618e5
+2025-10-19 11:53:33.345 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@25ad25f5
+2025-10-19 11:53:33.392 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2025-10-19 11:53:33.397 INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:57214/itestdb?loggerLevel=OFF]
+2025-10-19 11:53:33.398 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=test}
+2025-10-19 11:53:33.398 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-10-19 11:53:33.401 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2025-10-19 11:53:33.590 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2025-10-19 11:53:33.656 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@108b121f
+2025-10-19 11:53:33.657 DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@108b121f
+2025-10-19 11:53:33.657 DEBUG org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7faa0680
+2025-10-19 11:53:33.659 DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7b44bfb8] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@5e0f2c82]
+2025-10-19 11:53:33.942 DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7b44bfb8] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@646e6d07]
+2025-10-19 11:53:34.096 DEBUG org.hibernate.SQL - drop table if exists users cascade
+2025-10-19 11:53:34.098 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@78504ce9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-10-19 11:53:34.102 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-10-19 11:53:34.102 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - table "users" does not exist, skipping
+2025-10-19 11:53:34.106 DEBUG org.hibernate.SQL - create table users (id  bigserial not null, age int4, created_at timestamp not null, email varchar(255) not null, name varchar(255) not null, primary key (id))
+2025-10-19 11:53:34.106 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1b485c8b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-10-19 11:53:34.112 DEBUG org.hibernate.SQL - alter table users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2025-10-19 11:53:34.122 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-19 11:53:34.133 TRACE org.hibernate.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@646e6d07] for TypeConfiguration
+2025-10-19 11:53:34.281 DEBUG org.hibernate.SQL - delete from users
+2025-10-19 11:53:34.304 DEBUG org.hibernate.SQL - insert into users (age, created_at, email, name) values (?, ?, ?, ?)
+2025-10-19 11:53:34.306 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [21]
+2025-10-19 11:53:34.308 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [2025-10-19T11:53:34.292995600]
+2025-10-19 11:53:34.309 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [alice@test]
+2025-10-19 11:53:34.310 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [Alice]
+2025-10-19 11:53:34.325 INFO  com.example.userservice.dao.UserDaoImpl - Created user: User{id=1, name='Alice', email='alice@test', age=21, createdAt=2025-10-19T11:53:34.292995600}
+2025-10-19 11:53:34.332 DEBUG org.hibernate.SQL - select user0_.id as id1_0_0_, user0_.age as age2_0_0_, user0_.created_at as created_3_0_0_, user0_.email as email4_0_0_, user0_.name as name5_0_0_ from users user0_ where user0_.id=?
+2025-10-19 11:53:34.333 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2025-10-19 11:53:34.341 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([age2_0_0_] : [INTEGER]) - [21]
+2025-10-19 11:53:34.343 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([created_3_0_0_] : [TIMESTAMP]) - [2025-10-19T11:53:34.292996]
+2025-10-19 11:53:34.343 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([email4_0_0_] : [VARCHAR]) - [alice@test]
+2025-10-19 11:53:34.343 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([name5_0_0_] : [VARCHAR]) - [Alice]
+2025-10-19 11:53:34.351 DEBUG org.hibernate.SQL - delete from users
+2025-10-19 11:53:34.355 DEBUG org.hibernate.SQL - insert into users (age, created_at, email, name) values (?, ?, ?, ?)
+2025-10-19 11:53:34.356 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [30]
+2025-10-19 11:53:34.356 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [2025-10-19T11:53:34.355566200]
+2025-10-19 11:53:34.356 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [bob@test]
+2025-10-19 11:53:34.356 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [Bob]
+2025-10-19 11:53:34.360 INFO  com.example.userservice.dao.UserDaoImpl - Created user: User{id=2, name='Bob', email='bob@test', age=30, createdAt=2025-10-19T11:53:34.355566200}
+2025-10-19 11:53:34.360 DEBUG org.hibernate.SQL - insert into users (age, created_at, email, name) values (?, ?, ?, ?)
+2025-10-19 11:53:34.361 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [28]
+2025-10-19 11:53:34.361 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [2025-10-19T11:53:34.360454100]
+2025-10-19 11:53:34.361 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [carol@test]
+2025-10-19 11:53:34.361 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [Carol]
+2025-10-19 11:53:34.365 INFO  com.example.userservice.dao.UserDaoImpl - Created user: User{id=3, name='Carol', email='carol@test', age=28, createdAt=2025-10-19T11:53:34.360454100}
+2025-10-19 11:53:34.378 DEBUG org.hibernate.SQL - select user0_.id as id1_0_, user0_.age as age2_0_, user0_.created_at as created_3_0_, user0_.email as email4_0_, user0_.name as name5_0_ from users user0_
+2025-10-19 11:53:34.382 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_0_] : [BIGINT]) - [2]
+2025-10-19 11:53:34.382 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([age2_0_] : [INTEGER]) - [30]
+2025-10-19 11:53:34.383 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([created_3_0_] : [TIMESTAMP]) - [2025-10-19T11:53:34.355566]
+2025-10-19 11:53:34.383 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([email4_0_] : [VARCHAR]) - [bob@test]
+2025-10-19 11:53:34.383 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([name5_0_] : [VARCHAR]) - [Bob]
+2025-10-19 11:53:34.383 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([id1_0_] : [BIGINT]) - [3]
+2025-10-19 11:53:34.383 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([age2_0_] : [INTEGER]) - [28]
+2025-10-19 11:53:34.383 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([created_3_0_] : [TIMESTAMP]) - [2025-10-19T11:53:34.360454]
+2025-10-19 11:53:34.384 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([email4_0_] : [VARCHAR]) - [carol@test]
+2025-10-19 11:53:34.384 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([name5_0_] : [VARCHAR]) - [Carol]
+2025-10-19 11:53:34.394 DEBUG org.hibernate.SQL - update users set age=?, email=?, name=? where id=?
+2025-10-19 11:53:34.394 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [31]
+2025-10-19 11:53:34.394 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [bob@test]
+2025-10-19 11:53:34.394 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [Bob]
+2025-10-19 11:53:34.394 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [BIGINT] - [2]
+2025-10-19 11:53:34.400 INFO  com.example.userservice.dao.UserDaoImpl - Updated user: User{id=2, name='Bob', email='bob@test', age=31, createdAt=2025-10-19T11:53:34.355566200}
+2025-10-19 11:53:34.400 DEBUG org.hibernate.SQL - select user0_.id as id1_0_0_, user0_.age as age2_0_0_, user0_.created_at as created_3_0_0_, user0_.email as email4_0_0_, user0_.name as name5_0_0_ from users user0_ where user0_.id=?
+2025-10-19 11:53:34.401 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [2]
+2025-10-19 11:53:34.402 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([age2_0_0_] : [INTEGER]) - [31]
+2025-10-19 11:53:34.403 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([created_3_0_0_] : [TIMESTAMP]) - [2025-10-19T11:53:34.355566]
+2025-10-19 11:53:34.403 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([email4_0_0_] : [VARCHAR]) - [bob@test]
+2025-10-19 11:53:34.403 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([name5_0_0_] : [VARCHAR]) - [Bob]
+2025-10-19 11:53:34.407 DEBUG org.hibernate.SQL - delete from users
+2025-10-19 11:53:34.413 DEBUG org.hibernate.SQL - insert into users (age, created_at, email, name) values (?, ?, ?, ?)
+2025-10-19 11:53:34.413 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [40]
+2025-10-19 11:53:34.413 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [2025-10-19T11:53:34.412405]
+2025-10-19 11:53:34.413 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [dave@test]
+2025-10-19 11:53:34.413 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [Dave]
+2025-10-19 11:53:34.417 INFO  com.example.userservice.dao.UserDaoImpl - Created user: User{id=4, name='Dave', email='dave@test', age=40, createdAt=2025-10-19T11:53:34.412405}
+2025-10-19 11:53:34.418 DEBUG org.hibernate.SQL - select user0_.id as id1_0_0_, user0_.age as age2_0_0_, user0_.created_at as created_3_0_0_, user0_.email as email4_0_0_, user0_.name as name5_0_0_ from users user0_ where user0_.id=?
+2025-10-19 11:53:34.418 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2025-10-19 11:53:34.420 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([age2_0_0_] : [INTEGER]) - [40]
+2025-10-19 11:53:34.420 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([created_3_0_0_] : [TIMESTAMP]) - [2025-10-19T11:53:34.412405]
+2025-10-19 11:53:34.420 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([email4_0_0_] : [VARCHAR]) - [dave@test]
+2025-10-19 11:53:34.420 TRACE org.hibernate.type.descriptor.sql.BasicExtractor - extracted value ([name5_0_0_] : [VARCHAR]) - [Dave]
+2025-10-19 11:53:34.424 DEBUG org.hibernate.SQL - delete from users where id=?
+2025-10-19 11:53:34.424 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2025-10-19 11:53:34.430 INFO  com.example.userservice.dao.UserDaoImpl - Deleted user with id 4
+2025-10-19 11:53:34.430 DEBUG org.hibernate.SQL - select user0_.id as id1_0_0_, user0_.age as age2_0_0_, user0_.created_at as created_3_0_0_, user0_.email as email4_0_0_, user0_.name as name5_0_0_ from users user0_ where user0_.id=?
+2025-10-19 11:53:34.430 TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+2025-10-19 11:53:34.435 DEBUG org.hibernate.SQL - select user0_.id as id1_0_, user0_.age as age2_0_, user0_.created_at as created_3_0_, user0_.email as email4_0_, user0_.name as name5_0_ from users user0_
+2025-10-19 11:53:34.443 INFO  org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-10-19 11:53:34.443 DEBUG org.hibernate.SQL - drop table if exists users cascade
+2025-10-19 11:53:34.444 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@76d1f6ea] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-10-19 11:53:34.447 TRACE org.hibernate.type.spi.TypeConfiguration$Scope - Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@646e6d07] for TypeConfiguration
+2025-10-19 11:53:34.447 DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@55fe9c2f] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@646e6d07]
+2025-10-19 11:53:34.447 INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:57214/itestdb?loggerLevel=OFF]
