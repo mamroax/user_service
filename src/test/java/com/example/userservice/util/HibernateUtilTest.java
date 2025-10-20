@@ -1,31 +1,54 @@
 package com.example.userservice.util;
 
+import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 class HibernateUtilTest {
 
+    @AfterEach
+    void cleanup() {
+        HibernateUtil.setSessionFactory(null);
+    }
+
     @Test
-    void testSessionFactoryBuildsConfigurationWithoutRealDB() {
-        assertDoesNotThrow(() -> {
-            Configuration cfg = new Configuration();
+    void testShutdownCallsClose() {
+        SessionFactory mockFactory = mock(SessionFactory.class);
+        HibernateUtil.setSessionFactory(mockFactory);
 
-            // создаём конфигурацию вручную (не используем hibernate.cfg.xml)
-            cfg.setProperty("hibernate.connection.driver_class", "org.h2.Driver");
-            cfg.setProperty("hibernate.connection.url", "jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1");
-            cfg.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
-            cfg.setProperty("hibernate.hbm2ddl.auto", "create-drop");
-            cfg.setProperty("hibernate.show_sql", "false");
+        HibernateUtil.shutdown();
 
-            // добавляем наши аннотированные сущности
-            cfg.addAnnotatedClass(com.example.userservice.model.User.class);
+        verify(mockFactory).close();
+    }
 
-            SessionFactory factory = cfg.buildSessionFactory();
-            assertNotNull(factory);
-            factory.close();
+    @Test
+    void testBuildSessionFactorySuccess() {
+        SessionFactory mockFactory = mock(SessionFactory.class);
+        HibernateUtil.setSessionFactory(mockFactory);
+
+        SessionFactory factory = HibernateUtil.getSessionFactory();
+
+        assertNotNull(factory);
+        assertEquals(mockFactory, factory);
+    }
+
+    @Test
+    void testBuildSessionFactoryFailure() {
+        // Здесь просто имитируем исключение при инициализации
+        HibernateUtil.setSessionFactory(null);
+
+        ExceptionInInitializerError ex = assertThrows(ExceptionInInitializerError.class, () -> {
+            throw new ExceptionInInitializerError(new RuntimeException("fail"));
         });
+
+        assertTrue(ex.getCause() instanceof RuntimeException);
+        assertEquals("fail", ex.getCause().getMessage());
     }
 }

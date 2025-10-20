@@ -1,34 +1,32 @@
 package com.example.userservice.util;
 
-
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class HibernateUtil {
-    private static final Logger logger = LogManager.getLogger(HibernateUtil.class);
-    private static final SessionFactory sessionFactory = buildSessionFactory();
+    private static SessionFactory sessionFactory;
 
-    private static SessionFactory buildSessionFactory() {
-        try {
-            Configuration configuration = new Configuration();
-            configuration.configure("hibernate.cfg.xml");
-            return configuration.buildSessionFactory();
-        } catch (HibernateException ex) {
-            logger.error("Initial SessionFactory creation failed.", ex);
-            throw new ExceptionInInitializerError(ex);
-        }
+    // Для тестов
+    static void setSessionFactory(SessionFactory factory) {
+        sessionFactory = factory;
     }
 
     public static SessionFactory getSessionFactory() {
+        if (sessionFactory == null) {
+            try {
+                sessionFactory = new Configuration().configure().buildSessionFactory();
+            } catch (Exception e) {
+                throw new ExceptionInInitializerError(e);
+            }
+        }
         return sessionFactory;
     }
 
     public static void shutdown() {
-        getSessionFactory().close();
+        if (sessionFactory != null) {
+            sessionFactory.close();
+            sessionFactory = null;
+        }
     }
 }
-
-
