@@ -1,61 +1,64 @@
 package com.example.userservice.service;
 
-import com.example.userservice.dao.UserDao;
-import com.example.userservice.model.User;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.example.userservice.dto.UserDto;
+import com.example.userservice.entity.User;
+import com.example.userservice.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
+@Service
+@RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
 
-    private static final Logger logger = LogManager.getLogger(UserServiceImpl.class);
-    private final UserDao userDao;
+    private final UserRepository repository;
 
-    public UserServiceImpl(UserDao userDao) {
-        this.userDao = userDao;
+    @Override
+    public List<UserDto> findAll() {
+        return repository.findAll().stream()
+                .map(this::toDto)
+                .toList();
     }
 
     @Override
-    public User createUser(String name, String email, Integer age) throws Exception {
-        if (name == null || name.isBlank() || email == null || email.isBlank()) {
-            throw new IllegalArgumentException("Name and email cannot be empty");
-        }
-        User user = new User(name, email, age);
-        userDao.create(user);
-        logger.info("User created via service: {}", user);
-        return user;
+    public UserDto findById(Long id) {
+        return repository.findById(id)
+                .map(this::toDto)
+                .orElseThrow(() -> new RuntimeException("User not found"));
     }
 
     @Override
-    public List<User> getAllUsers() {
-        return userDao.findAll();
+    public UserDto create(UserDto dto) {
+        User user = User.builder()
+                .username(dto.getUsername())
+                .email(dto.getEmail())
+                .age(dto.getAge())
+                .build();
+        return toDto(repository.save(user));
     }
 
     @Override
-    public Optional<User> getUserById(Long id) {
-        return userDao.findById(id);
+    public UserDto update(Long id, UserDto dto) {
+        User user = repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+        user.setUsername(dto.getUsername());
+        user.setEmail(dto.getEmail());
+        user.setAge(dto.getAge());
+        return toDto(repository.save(user));
     }
 
     @Override
-    public User updateUser(Long id, String name, String email, Integer age) throws Exception {
-        Optional<User> existing = userDao.findById(id);
-        if (existing.isEmpty()) {
-            throw new IllegalArgumentException("User not found with id " + id);
-        }
-        User user = existing.get();
-        if (name != null && !name.isBlank()) user.setName(name);
-        if (email != null && !email.isBlank()) user.setEmail(email);
-        if (age != null) user.setAge(age);
-
-        userDao.update(user);
-        logger.info("User updated via service: {}", user);
-        return user;
+    public void delete(Long id) {
+        repository.deleteById(id);
     }
 
-    @Override
-    public boolean deleteUser(Long id) throws Exception {
-        return userDao.delete(id);
+    private UserDto toDto(User user) {
+        return UserDto.builder()
+                .id(user.getId())
+                .username(user.getUsername())
+                .email(user.getEmail())
+                .age(user.getAge())
+                .build();
     }
 }

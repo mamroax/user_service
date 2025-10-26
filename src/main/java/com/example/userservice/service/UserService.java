@@ -1,13 +1,12 @@
 package com.example.userservice.service;
 
-import com.example.userservice.model.User;
+import com.example.userservice.dto.UserDto;
 import java.util.List;
-import java.util.Optional;
 
 public interface UserService {
-    User createUser(String name, String email, Integer age) throws Exception;
-    List<User> getAllUsers();
-    Optional<User> getUserById(Long id);
-    User updateUser(Long id, String name, String email, Integer age) throws Exception;
-    boolean deleteUser(Long id) throws Exception;
+    List<UserDto> findAll();
+    UserDto findById(Long id);
+    UserDto create(UserDto dto);
+    UserDto update(Long id, UserDto dto);
+    void delete(Long id);
 }
