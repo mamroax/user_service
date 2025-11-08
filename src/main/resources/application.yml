@@ -1,9 +1,18 @@
 spring:
+  kafka:
+    bootstrap-servers: kafka:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    properties:
+      spring.json.add.type.headers: false
+
   datasource:
-    url: jdbc:h2:mem:userdb;DB_CLOSE_DELAY=-1
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    url: jdbc:postgresql://postgres:5432/userdb
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -11,8 +20,10 @@ spring:
     properties:
       hibernate:
         format_sql: true
-  h2:
-    console:
-      enabled: true
+
+app:
+  kafka:
+    topic: user-events
+
 server:
   port: 8080

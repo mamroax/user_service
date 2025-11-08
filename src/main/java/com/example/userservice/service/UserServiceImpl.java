@@ -13,6 +13,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     private final UserRepository repository;
+    private final com.example.userservice.kafka.UserEventProducer producer;
 
     @Override
     public List<UserDto> findAll() {
