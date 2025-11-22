@@ -1,6 +1,7 @@
 package com.example.userservice.service;
 
 import com.example.userservice.dto.UserDto;
+import com.example.userservice.dto.UserEvent;
 import com.example.userservice.entity.User;
 import com.example.userservice.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -36,7 +37,10 @@ public class UserServiceImpl implements UserService {
                 .email(dto.getEmail())
                 .age(dto.getAge())
                 .build();
-        return toDto(repository.save(user));
+        user = repository.save(user);
+        // отправляем событие
+        producer.sendUserEvent(new UserEvent("CREATED", user.getEmail()));
+        return toDto(user);
     }
 
     @Override
@@ -51,7 +55,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void delete(Long id) {
+        User user = repository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found"));
         repository.deleteById(id);
+        // отправляем событие
+        producer.sendUserEvent(new UserEvent("DELETED", user.getEmail()));
     }
 
     private UserDto toDto(User user) {

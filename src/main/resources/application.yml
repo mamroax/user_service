@@ -1,6 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: localhost:9092 # kafka:9092
+    bootstrap-servers: localhost:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
@@ -8,18 +8,15 @@ spring:
       spring.json.add.type.headers: false
 
   datasource:
-    url: jdbc:postgresql://localhost:54320/postgres # jdbc:postgresql://postgres:5432/userdb
+    url: jdbc:postgresql://localhost:5432/userdb
     driver-class-name: org.postgresql.Driver
-    username: user
-    password: 1234
+    username: postgres
+    password: postgres
 
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
 
 app:
   kafka:

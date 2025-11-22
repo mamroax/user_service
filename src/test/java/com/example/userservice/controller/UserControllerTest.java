@@ -3,36 +3,100 @@ package com.example.userservice.controller;
 import com.example.userservice.dto.UserDto;
 import com.example.userservice.service.UserService;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.mockito.ArgumentMatchers;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-@WebMvcTest(UserController.class)
 class UserControllerTest {
 
-    @Autowired
-    private MockMvc mockMvc;
+    @Test
+    void testGetAll() throws Exception {
+        UserService service = mock(UserService.class);
+        when(service.findAll()).thenReturn(List.of(
+                UserDto.builder().id(1L).username("A").email("a@mail.com").age(20).build()
+        ));
 
-    @MockBean
-    private UserService service;
+        MockMvc mvc = MockMvcBuilders.standaloneSetup(new UserController(service)).build();
+
+        mvc.perform(get("/api/users"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].username").value("A"));
+
+        verify(service).findAll();
+    }
 
     @Test
-    void testGetAllUsers() throws Exception {
-        List<UserDto> users = List.of(
-                UserDto.builder().id(1L).username("Alice").email("a@a.com").age(25).build()
+    void testGetById() throws Exception {
+        UserService service = mock(UserService.class);
+        when(service.findById(1L)).thenReturn(
+                UserDto.builder().id(1L).username("B").email("b@mail.com").age(30).build()
         );
-        when(service.findAll()).thenReturn(users);
 
-        mockMvc.perform(get("/api/users"))
+        MockMvc mvc = MockMvcBuilders.standaloneSetup(new UserController(service)).build();
+
+        mvc.perform(get("/api/users/1"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].username").value("Alice"));
+                .andExpect(jsonPath("$.email").value("b@mail.com"));
+
+        verify(service).findById(1L);
+    }
+
+    @Test
+    void testCreate() throws Exception {
+        UserService service = mock(UserService.class);
+        when(service.create(any())).thenReturn(
+                UserDto.builder().id(1L).username("C").email("c@mail.com").age(25).build()
+        );
+
+        MockMvc mvc = MockMvcBuilders.standaloneSetup(new UserController(service)).build();
+
+        mvc.perform(post("/api/users")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("""
+                                {"username": "C", "email": "c@mail.com", "age": 25}
+                                """))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id").value(1));
+
+        verify(service).create(any());
+    }
+
+    @Test
+    void testUpdate() throws Exception {
+        UserService service = mock(UserService.class);
+        when(service.update(eq(1L), any())).thenReturn(
+                UserDto.builder().id(1L).username("Updated").email("u@mail.com").age(40).build()
+        );
+
+        MockMvc mvc = MockMvcBuilders.standaloneSetup(new UserController(service)).build();
+
+        mvc.perform(put("/api/users/1")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("""
+                                {"username": "Updated", "email": "u@mail.com", "age": 40}
+                                """))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.username").value("Updated"));
+
+        verify(service).update(eq(1L), any());
+    }
+
+    @Test
+    void testDelete() throws Exception {
+        UserService service = mock(UserService.class);
+
+        MockMvc mvc = MockMvcBuilders.standaloneSetup(new UserController(service)).build();
+
+        mvc.perform(delete("/api/users/1"))
+                .andExpect(status().isNoContent());
+
+        verify(service).delete(1L);
     }
 }
