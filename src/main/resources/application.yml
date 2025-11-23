@@ -1,18 +1,52 @@
 spring:
+  application:
+    name: user-service
+  
   datasource:
-    url: jdbc:h2:mem:userdb;DB_CLOSE_DELAY=-1
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
+    url: jdbc:postgresql://localhost:5432/user_service
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
     properties:
       hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
-  h2:
-    console:
-      enabled: true
+    show-sql: true
+  
+  jackson:
+    default-property-inclusion: non_null
+
 server:
   port: 8080
+  servlet:
+    context-path: /
+
+# Springdoc OpenAPI (Swagger) конфигурация
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+    operations-sorter: method
+    tags-sorter: alpha
+    doc-expansion: list
+    show-extensions: true
+    show-common-extensions: true
+  
+  api-docs:
+    path: /v3/api-docs
+    enabled: true
+  
+  # Конфигурация групп (для больших приложений)
+  group-configs:
+    - group: "Users"
+      paths-to-match: "/api/users/**"
+
+logging:
+  level:
+    root: INFO
+    com.example.userservice: DEBUG
+    org.springframework.web: DEBUG
